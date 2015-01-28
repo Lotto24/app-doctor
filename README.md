@@ -1,8 +1,7 @@
 # app-doctor
 Diagnose application's common startup problems by analysing log files
 
-[![Build Status](https://travis-ci.org/eSailors/app-doctor.svg)](https://travis-ci.org/eSailors/app-doctor)
-
+[![Build Status](https://travis-ci.org/eSailors/app-doctor.svg?branch=master)](https://travis-ci.org/eSailors/app-doctor)
 
 ## Usage
 
