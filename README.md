@@ -31,6 +31,16 @@ log=/home/john/my-application/logs/my-app.catalina.out
 java -jar libs/app-doctor-all-1.0.jar --db failure-causes.yaml --log $log
 ```
 
+app-doctor will try to match your log file against the failure causes provided in the database yaml file and it will notify you if it detects any common failure cause.
+
+```
+[app-doctor] Scanning log file (/home/john/my-application/logs/my-app.catalina.out) 
+[app-doctor] A failure cause was identified
+[app-doctor] Name: ClassNotFoundException-SovereignStateLoaderListener
+[app-doctor] Description: Strange failure. It happens sometimes due to maven concurrent runs.
+[app-doctor] Solution: Go to the frontend module and execute mvn clean install Then restart the webshop.
+```
+
 Download
 -------
 
