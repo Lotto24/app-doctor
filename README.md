@@ -24,11 +24,11 @@ description: This happens when the server cannot find the property-management se
 solution: Start the property-management service and restart the webshop.
 ```
 
-Get the latest `app-doctor-all-*.jar` and run app-doctor specifying the failure-database (yaml) and the location of your application's main log. Example:
+Get the latest `app-doctor-all-*.jar` and run app-doctor specifying the failure-database (yaml) and the location of your application's main log.
 ```sh
 #!/bin/bash
 log=/home/john/my-application/logs/my-app.catalina.out
-java -jar libs/app-doctor-all-1.0.jar --db failure-causes.yaml --log "$log"
+java -jar libs/app-doctor-all-1.0.jar --db failure-causes.yaml --log $log
 ```
 
 
