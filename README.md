@@ -31,7 +31,7 @@ log=/home/john/my-application/logs/my-app.catalina.out
 java -jar libs/app-doctor-all-1.0.jar --db failure-causes.yaml --log $log
 ```
 
-app-doctor will try to match your log file against the failure causes provided in the database yaml file and it will notify you if it detects any common failure cause.
+App-doctor will try to match your log file against the failure causes provided in the database yaml file and it will notify you if it detects any common failure cause.
 
 ```
 [app-doctor] Scanning log file (/home/john/my-application/logs/my-app.catalina.out) 
