@@ -1,7 +1,5 @@
-# app-doctor
-Diagnose application's common startup problems by analysing log files
-
 ![app-doctor](https://raw.githubusercontent.com/josketres/app-doctor/master/art/app-doctor-logo.png)
+Diagnose application's common startup problems by analysing log files
 
 [![Build Status](https://travis-ci.org/eSailors/app-doctor.svg?branch=master)](https://travis-ci.org/eSailors/app-doctor)
 
