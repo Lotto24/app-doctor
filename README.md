@@ -29,7 +29,8 @@ Download the latest app-doctor jar
 Run app-doctor specifying the failure-database (yaml) and the location of your application's main log. Example:
 ```sh
 #!/bin/bash
-java -jar libs/app-doctor-all-1.0.jar --db failure-causes.yaml --log "/home/john/my-application/logs/my-app.catalina.out"
+log=/home/john/my-application/logs/my-app.catalina.out
+java -jar libs/app-doctor-all-1.0.jar --db failure-causes.yaml --log "$log"
 ```
 
 
