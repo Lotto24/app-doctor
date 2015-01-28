@@ -8,6 +8,8 @@ import java.util.List;
 
 public class AppDoctor {
 
+    private static final int ERROR_CODE = 1;
+
     public static void main(String[] args) {
 
         MainCommand main = new MainCommand();
@@ -27,14 +29,21 @@ public class AppDoctor {
 
     private static void diagnose(MainCommand main) {
 
+        System.out.printf("Scanning log file (%s)%n", main.logPath);
+
         FailureDatabase db = new FailureDatabaseYaml(main.dbPath);
         Doctor doctor = new Doctor(db);
         Result result = doctor.diagnoseLogFile(main.logPath);
         if (result.healthy) {
-
+            printSuccess();
         } else {
             printFailureCause(result.failureCause);
         }
+    }
+
+    private static void printSuccess() {
+
+        System.out.println("Your application looks healthy!");
     }
 
     private static void printFailureCause(FailureCause cause) {

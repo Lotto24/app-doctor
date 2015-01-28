@@ -34,8 +34,7 @@ public class AppDoctorTest {
 
         AppDoctor.main(new String[]{"--help"});
 
-        String out = outContent.toString();
-        assertThat(out, containsString("Usage: "));
+        assertThat(outContent.toString(), containsString("Usage: "));
     }
 
     @Test
@@ -44,7 +43,18 @@ public class AppDoctorTest {
         AppDoctor.main(new String[]{"--db", "\"src/test/resources/failure-causes.yaml\"", "--log", "\"src/test/resources/simple-pattern.log\""});
 
         String out = outContent.toString();
-        assertThat(out, Matchers.containsString("Go to the frontend module and execute mvn clean install Then restart the webshop"));
+        assertThat(out, containsString("Scanning log file (src/test/resources/simple-pattern.log)"));
+        assertThat(out, containsString("Go to the frontend module and execute mvn clean install Then restart the webshop"));
+    }
+
+    @Test
+    public void should_print_success_message_if_no_failure_was_identified() {
+
+        AppDoctor.main(new String[]{"--db", "\"src/test/resources/failure-causes.yaml\"", "--log", "\"src/test/resources/no-failures.log\""});
+
+        String out = outContent.toString();
+        assertThat(out, containsString("Scanning log file (src/test/resources/no-failures.log)"));
+        assertThat(out, containsString("Your application looks healthy!"));
     }
 
 }

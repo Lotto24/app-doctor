@@ -1,0 +1,19 @@
+Java HotSpot(TM) 64-Bit Server VM warning: ignoring option MaxPermSize=160m; support was removed in 8.0
+-XX:-BytecodeVerificationLocal -XX:-BytecodeVerificationRemote -XX:+HeapDumpOnOutOfMemoryError -XX:InitialHeapSize=402653184 -XX:MaxHeapSize=402653184 -XX:+PrintCommandLineFlags -XX:+PrintGC -XX:+PrintGCDateStamps -XX:+PrintGCDetails -XX:+PrintGCTimeStamps -XX:+PrintVMOptions -XX:+UseCompressedClassPointers -XX:+UseCompressedOops -XX:+UseParallelGC
+Jan 28, 2015 1:28:29 PM org.apache.coyote.http11.Http11Protocol init
+INFO: Initializing Coyote HTTP/1.1 on http-32102
+Jan 28, 2015 1:28:29 PM org.apache.coyote.http11.Http11Protocol init
+INFO: Initializing Coyote HTTP/1.1 on http-32104
+Jan 28, 2015 1:28:29 PM org.apache.catalina.startup.Catalina load
+INFO: Initialization processed in 353 ms
+Jan 28, 2015 1:28:29 PM org.apache.catalina.realm.JAASRealm setContainer
+INFO: Set JAAS app name wc-00-000000
+Jan 28, 2015 1:28:29 PM org.apache.catalina.core.StandardService start
+INFO: Starting service WebShop
+Jan 28, 2015 1:28:29 PM org.apache.catalina.core.StandardEngine start
+INFO: Starting Servlet Engine: Tipp24 Application Server
+Jan 28, 2015 1:28:29 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory ROOT
+Jan 28, 2015 1:28:30 PM org.apache.catalina.loader.WebappClassLoader validateJarFile
+INFO: validateJarFile(/home/developers/jzarz/development/alinghi-app/wc-00-000000/webapps/ROOT/WEB-INF/lib/servlet-api-2.5.jar) - jar not loaded. See Servlet Spec 2.3, section 9.7.2. Offending class: javax/servlet/Servlet.class
+Jan 28, 2015 1:28:30 PM org.apache.catalina.core.StandardContext listenerStart
