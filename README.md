@@ -43,6 +43,7 @@ App-doctor will try to match your log file against the failure causes provided i
 
 Download
 -------
+Download [the latest JAR][1]
 
 License
 -------
@@ -60,3 +61,5 @@ License
     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
     See the License for the specific language governing permissions and
     limitations under the License.
+
+ [1]: https://search.maven.org/remote_content?g=com.josketres&a=builderator&v=LATEST
