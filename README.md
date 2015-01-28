@@ -6,7 +6,7 @@ Diagnose application's common startup problems by analysing log files
 
 ## Usage
 
-1- Create a database of common failure causes for your application. Example:
+Create a database of common failure causes for your application.
 ```yaml
 ---
 name: ClassNotFoundException-SovereignStateLoaderListener
@@ -24,9 +24,7 @@ description: This happens when the server cannot find the property-management se
 solution: Start the property-management service and restart the webshop.
 ```
 
-2- Download the latest app-doctor jar
-
-3- Run app-doctor specifying the failure-database (yaml) and the location of your application's main log. Example:
+Get the latest `app-doctor-all-*.jar` and run app-doctor specifying the failure-database (yaml) and the location of your application's main log. Example:
 ```sh
 #!/bin/bash
 log=/home/john/my-application/logs/my-app.catalina.out
