@@ -17,7 +17,13 @@ description:
 solution:
   Go to the frontend module and execute mvn clean install
   Then restart the webshop
+---
+name: Some other common failure
+pattern: .*PropertyNotFoundException.*
+description: This happens when the server cannot find the property-management service
+solution: Start the property-management service and restart the webshop.
 ```
+
 
 
 License
