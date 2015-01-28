@@ -7,7 +7,7 @@ Diagnose application's common startup problems by analysing log files
 ## Usage
 
 Create a database of common failure causes for your application.
-´´´yaml
+```yaml
 ---
 name: ClassNotFoundException-SovereignStateLoaderListener
 pattern: .*ClassNotFoundException.*SovereignStateLoaderListener
@@ -17,4 +17,4 @@ description:
 solution:
   Go to the frontend module and execute mvn clean install
   Then restart the webshop
-´´´
+```
