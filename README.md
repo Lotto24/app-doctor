@@ -62,4 +62,4 @@ License
     See the License for the specific language governing permissions and
     limitations under the License.
 
- [1]: https://search.maven.org/remote_content?g=com.josketres&a=builderator&v=LATEST
+ [1]: https://github.com/eSailors/app-doctor/releases/download/1.0.0/app-doctor-all-1.0.jar
