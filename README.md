@@ -31,6 +31,8 @@ log=/home/john/my-application/logs/my-app.catalina.out
 java -jar libs/app-doctor-all-1.0.jar --db failure-causes.yaml --log $log
 ```
 
+Download
+-------
 
 License
 -------
