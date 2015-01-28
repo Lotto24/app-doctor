@@ -1,0 +1,14 @@
+---
+name: ClassNotFoundException-SovereignStateLoaderListener
+pattern: .*ClassNotFoundException.*SovereignStateLoaderListener
+description:
+  Strange failure.
+  It happens sometimes due to maven concurrent runs.
+solution:
+  Go to the frontend module and execute mvn clean install
+  Then restart the webshop
+---
+name: dummy
+pattern: .*dummy.*
+description: Dummy failure description for tests
+solution: There is no solution for this dummy failure
